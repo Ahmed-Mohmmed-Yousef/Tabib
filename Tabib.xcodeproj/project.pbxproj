@@ -3,25 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		241B8D782304C7B70008CF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D772304C7B70008CF34 /* AppDelegate.swift */; };
 		241B8D7A2304C7B70008CF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D792304C7B70008CF34 /* ViewController.swift */; };
-		241B8D7D2304C7B70008CF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241B8D7B2304C7B70008CF34 /* Main.storyboard */; };
+		241B8D7D2304C7B70008CF34 /* LoginVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241B8D7B2304C7B70008CF34 /* LoginVC.storyboard */; };
 		241B8D822304C7B80008CF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241B8D812304C7B80008CF34 /* Assets.xcassets */; };
 		241B8D852304C7B80008CF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241B8D832304C7B80008CF34 /* LaunchScreen.storyboard */; };
+		241B8D8D2304CA220008CF34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D8C2304CA220008CF34 /* LoginVC.swift */; };
+		241B8D922304CAC60008CF34 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D912304CAC60008CF34 /* AuthController.swift */; };
+		241B8D942304CB480008CF34 /* Button+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D932304CB480008CF34 /* Button+Extention.swift */; };
+		241B8D972304CB910008CF34 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D962304CB910008CF34 /* UITextField+Extention.swift */; };
+		241B8D992304CD7B0008CF34 /* SearchVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241B8D982304CD7B0008CF34 /* SearchVC.storyboard */; };
+		241B8D9C2304CFBA0008CF34 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D9B2304CFBA0008CF34 /* CustomTextField.swift */; };
+		241B8D9E2304D6AE0008CF34 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8D9D2304D6AE0008CF34 /* SearchVC.swift */; };
+		241B8DA52304DFFA0008CF34 /* searchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8DA32304DFFA0008CF34 /* searchResultCell.swift */; };
+		241B8DA62304DFFA0008CF34 /* searchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241B8DA42304DFFA0008CF34 /* searchResultCell.xib */; };
+		241B8DA82304EC9B0008CF34 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8DA72304EC9B0008CF34 /* UIView+Extention.swift */; };
+		241B8DAA23053CB50008CF34 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8DA923053CB50008CF34 /* CustomButton.swift */; };
+		241B8DB02305405A0008CF34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 241B8DAF2305405A0008CF34 /* GoogleService-Info.plist */; };
+		241B8DB3230546030008CF34 /* ViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8DB2230546030008CF34 /* ViewController+Extention.swift */; };
+		241B8DB52305A4DD0008CF34 /* UserDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8DB42305A4DD0008CF34 /* UserDataVC.swift */; };
+		241B8DB72305A4EA0008CF34 /* UserDataVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241B8DB62305A4EA0008CF34 /* UserDataVC.storyboard */; };
+		879C676B053A7C985E984D5C /* Pods_Tabib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48A2A897984DE4F10AB4C82 /* Pods_Tabib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		241B8D742304C7B70008CF34 /* Tabib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		241B8D772304C7B70008CF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		241B8D792304C7B70008CF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		241B8D7C2304C7B70008CF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		241B8D7C2304C7B70008CF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginVC.storyboard; sourceTree = "<group>"; };
 		241B8D812304C7B80008CF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241B8D842304C7B80008CF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241B8D862304C7B80008CF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241B8D8C2304CA220008CF34 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		241B8D912304CAC60008CF34 /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		241B8D932304CB480008CF34 /* Button+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+Extention.swift"; sourceTree = "<group>"; };
+		241B8D962304CB910008CF34 /* UITextField+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		241B8D982304CD7B0008CF34 /* SearchVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchVC.storyboard; sourceTree = "<group>"; };
+		241B8D9B2304CFBA0008CF34 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		241B8D9D2304D6AE0008CF34 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		241B8DA32304DFFA0008CF34 /* searchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultCell.swift; sourceTree = "<group>"; };
+		241B8DA42304DFFA0008CF34 /* searchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchResultCell.xib; sourceTree = "<group>"; };
+		241B8DA72304EC9B0008CF34 /* UIView+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		241B8DA923053CB50008CF34 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		241B8DAF2305405A0008CF34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Tabib/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		241B8DB2230546030008CF34 /* ViewController+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ViewController+Extention.swift"; path = "../../../RefaqTeam/TabibDoctor/TabibDoctor/Resource/Extentions/ViewController+Extention.swift"; sourceTree = "<group>"; };
+		241B8DB42305A4DD0008CF34 /* UserDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataVC.swift; sourceTree = "<group>"; };
+		241B8DB62305A4EA0008CF34 /* UserDataVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDataVC.storyboard; sourceTree = "<group>"; };
+		3F9DFF443196E892E6AFFB26 /* Pods-Tabib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabib.debug.xcconfig"; path = "Target Support Files/Pods-Tabib/Pods-Tabib.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0594A217534C35C4104A1B /* Pods-Tabib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabib.release.xcconfig"; path = "Target Support Files/Pods-Tabib/Pods-Tabib.release.xcconfig"; sourceTree = "<group>"; };
+		B48A2A897984DE4F10AB4C82 /* Pods_Tabib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tabib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879C676B053A7C985E984D5C /* Pods_Tabib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19B9C4D8DA5AEA936B535BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48A2A897984DE4F10AB4C82 /* Pods_Tabib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		241B8D6B2304C7B70008CF34 = {
 			isa = PBXGroup;
 			children = (
 				241B8D762304C7B70008CF34 /* Tabib */,
 				241B8D752304C7B70008CF34 /* Products */,
+				4AEC9676C1099A2E8776B552 /* Pods */,
+				19B9C4D8DA5AEA936B535BD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +99,102 @@
 		241B8D762304C7B70008CF34 /* Tabib */ = {
 			isa = PBXGroup;
 			children = (
-				241B8D772304C7B70008CF34 /* AppDelegate.swift */,
-				241B8D792304C7B70008CF34 /* ViewController.swift */,
-				241B8D7B2304C7B70008CF34 /* Main.storyboard */,
-				241B8D812304C7B80008CF34 /* Assets.xcassets */,
-				241B8D832304C7B80008CF34 /* LaunchScreen.storyboard */,
-				241B8D862304C7B80008CF34 /* Info.plist */,
+				241B8DAB230540030008CF34 /* AppDelegate */,
+				241B8D9A2304CF8E0008CF34 /* Customs */,
+				241B8D952304CB4D0008CF34 /* Extentions */,
+				241B8D902304CA600008CF34 /* Model */,
+				241B8D8F2304CA550008CF34 /* View */,
+				241B8D8E2304CA420008CF34 /* Controller */,
+				241B8DAC230540240008CF34 /* Support files */,
+				241B8DB1230540740008CF34 /* Resource */,
 			);
 			path = Tabib;
+			sourceTree = "<group>";
+		};
+		241B8D8E2304CA420008CF34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				241B8D792304C7B70008CF34 /* ViewController.swift */,
+				241B8D8C2304CA220008CF34 /* LoginVC.swift */,
+				241B8D9D2304D6AE0008CF34 /* SearchVC.swift */,
+				241B8DA32304DFFA0008CF34 /* searchResultCell.swift */,
+				241B8DB42305A4DD0008CF34 /* UserDataVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		241B8D8F2304CA550008CF34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				241B8D832304C7B80008CF34 /* LaunchScreen.storyboard */,
+				241B8D7B2304C7B70008CF34 /* LoginVC.storyboard */,
+				241B8D982304CD7B0008CF34 /* SearchVC.storyboard */,
+				241B8DA42304DFFA0008CF34 /* searchResultCell.xib */,
+				241B8DB62305A4EA0008CF34 /* UserDataVC.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		241B8D902304CA600008CF34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				241B8D912304CAC60008CF34 /* AuthController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		241B8D952304CB4D0008CF34 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				241B8DB2230546030008CF34 /* ViewController+Extention.swift */,
+				241B8DA72304EC9B0008CF34 /* UIView+Extention.swift */,
+				241B8D962304CB910008CF34 /* UITextField+Extention.swift */,
+				241B8D932304CB480008CF34 /* Button+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		241B8D9A2304CF8E0008CF34 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				241B8DA923053CB50008CF34 /* CustomButton.swift */,
+				241B8D9B2304CFBA0008CF34 /* CustomTextField.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		241B8DAB230540030008CF34 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				241B8D772304C7B70008CF34 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		241B8DAC230540240008CF34 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				241B8DAF2305405A0008CF34 /* GoogleService-Info.plist */,
+				241B8D862304C7B80008CF34 /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		241B8DB1230540740008CF34 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				241B8D812304C7B80008CF34 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4AEC9676C1099A2E8776B552 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F9DFF443196E892E6AFFB26 /* Pods-Tabib.debug.xcconfig */,
+				6A0594A217534C35C4104A1B /* Pods-Tabib.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 241B8D892304C7B80008CF34 /* Build configuration list for PBXNativeTarget "Tabib" */;
 			buildPhases = (
+				9BA9EBD434509548163BFD4C /* [CP] Check Pods Manifest.lock */,
 				241B8D702304C7B70008CF34 /* Sources */,
 				241B8D712304C7B70008CF34 /* Frameworks */,
 				241B8D722304C7B70008CF34 /* Resources */,
+				A25131C44C8EDBEFDFE78F12 /* [CP] Embed Pods Frameworks */,
+				869FC2D80D543EC81A744B05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,32 +259,106 @@
 			buildActionMask = 2147483647;
 			files = (
 				241B8D852304C7B80008CF34 /* LaunchScreen.storyboard in Resources */,
+				241B8DA62304DFFA0008CF34 /* searchResultCell.xib in Resources */,
+				241B8D992304CD7B0008CF34 /* SearchVC.storyboard in Resources */,
 				241B8D822304C7B80008CF34 /* Assets.xcassets in Resources */,
-				241B8D7D2304C7B70008CF34 /* Main.storyboard in Resources */,
+				241B8D7D2304C7B70008CF34 /* LoginVC.storyboard in Resources */,
+				241B8DB72305A4EA0008CF34 /* UserDataVC.storyboard in Resources */,
+				241B8DB02305405A0008CF34 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		869FC2D80D543EC81A744B05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA9EBD434509548163BFD4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tabib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A25131C44C8EDBEFDFE78F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tabib/Pods-Tabib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		241B8D702304C7B70008CF34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241B8D9E2304D6AE0008CF34 /* SearchVC.swift in Sources */,
+				241B8D9C2304CFBA0008CF34 /* CustomTextField.swift in Sources */,
+				241B8DA52304DFFA0008CF34 /* searchResultCell.swift in Sources */,
+				241B8D942304CB480008CF34 /* Button+Extention.swift in Sources */,
 				241B8D7A2304C7B70008CF34 /* ViewController.swift in Sources */,
+				241B8DB3230546030008CF34 /* ViewController+Extention.swift in Sources */,
+				241B8D922304CAC60008CF34 /* AuthController.swift in Sources */,
 				241B8D782304C7B70008CF34 /* AppDelegate.swift in Sources */,
+				241B8DAA23053CB50008CF34 /* CustomButton.swift in Sources */,
+				241B8DA82304EC9B0008CF34 /* UIView+Extention.swift in Sources */,
+				241B8D972304CB910008CF34 /* UITextField+Extention.swift in Sources */,
+				241B8D8D2304CA220008CF34 /* LoginVC.swift in Sources */,
+				241B8DB52305A4DD0008CF34 /* UserDataVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		241B8D7B2304C7B70008CF34 /* Main.storyboard */ = {
+		241B8D7B2304C7B70008CF34 /* LoginVC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				241B8D7C2304C7B70008CF34 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginVC.storyboard;
 			sourceTree = "<group>";
 		};
 		241B8D832304C7B80008CF34 /* LaunchScreen.storyboard */ = {
@@ -280,11 +490,12 @@
 		};
 		241B8D8A2304C7B80008CF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9DFF443196E892E6AFFB26 /* Pods-Tabib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZDD8NBYW6;
-				INFOPLIST_FILE = Tabib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tabib/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +503,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.refaq.sherif.Tabib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		241B8D8B2304C7B80008CF34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0594A217534C35C4104A1B /* Pods-Tabib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZDD8NBYW6;
-				INFOPLIST_FILE = Tabib/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tabib/Support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.refaq.sherif.Tabib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

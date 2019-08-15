@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DZi-Xv-NKM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--البيانات-->
+        <scene sceneID="dQy-1f-EaG">
+            <objects>
+                <viewController id="Yln-3p-lUa" customClass="UserDataVC" customModule="Tabib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gxD-7l-bLa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-6h-bNS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm0-cf-fbD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ypU-6l-ae4"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_photo" translatesAutoresizingMaskIntoConstraints="NO" id="AAQ-N0-yXS">
+                                        <rect key="frame" x="127.5" y="16" width="120" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="Q9S-Kz-31E"/>
+                                            <constraint firstAttribute="width" constant="120" id="dSn-pg-D0g"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bb-YS-brf">
+                                        <rect key="frame" x="119.5" y="16" width="136" height="156"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Select your photo"/>
+                                        <connections>
+                                            <action selector="selectPhotoPressed:" destination="Yln-3p-lUa" eventType="touchUpInside" id="uSc-Pr-fE1"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-wS-qkL">
+                                        <rect key="frame" x="16" y="220" width="343" height="88"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم ثلاثي" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPi-aL-R6g" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="3YZ-Sy-kyB"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="0.43422013520000002" green="0.71374577279999996" blue="0.70588850979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="name"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                        <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="returnPressed:" destination="Yln-3p-lUa" eventType="primaryActionTriggered" id="1EX-bg-Eln"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الهاتف المحمول" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZ0-Sv-wLs" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="48" width="343" height="40"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="phone"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="0.43422013520000002" green="0.71374577279999996" blue="0.70588850979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                        <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البيانات التالية ليست الزامية و لكنها بغرض المساعدة في التشخيص الصحيح." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-Bv-6Qi">
+                                        <rect key="frame" x="10" y="324" width="355" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-im-csH" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="400.5" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fNB-bx-RrH"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العمر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAe-l1-oyD">
+                                        <rect key="frame" x="320.5" y="378.5" width="38.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VmY-6Y-3EY" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="478.5" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1wy-RY-fNt"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الطول" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhU-FI-3ea">
+                                        <rect key="frame" x="316" y="456.5" width="43" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-HD-9Gt" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="556.5" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f0F-6T-gg1"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الوزن" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2J-E4-2SS">
+                                        <rect key="frame" x="319.5" y="534.5" width="39.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cn-RL-K7a" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="712.5" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="WCf-15-K0Z"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قياس السكر" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcJ-ze-HEa">
+                                        <rect key="frame" x="272.5" y="690.5" width="86.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6RE-bx-A8v" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="207.5" y="634.5" width="151.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="cwF-V3-tWw"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCm-zh-vyY" customClass="DesignableUITextField" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="634.5" width="151.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FTj-Lm-Cur"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                <color key="value" red="0.22352941179999999" green="0.49803921569999998" blue="0.4941176471" alpha="0.50556506850000005" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قياس الضغط" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-3f-nTM">
+                                        <rect key="frame" x="263" y="612.5" width="96" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAg-fm-UAn">
+                                        <rect key="frame" x="183.5" y="642.5" width="8" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3u-Gh-EKw" customClass="CustomButton" customModule="Tabib" customModuleProvider="target">
+                                        <rect key="frame" x="151.5" y="776.5" width="72" height="45"/>
+                                        <color key="backgroundColor" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="Lh3-Pp-r1c"/>
+                                            <constraint firstAttribute="height" constant="45" id="mOO-TU-rQd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="تسجيل">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneBtnPressed:" destination="Yln-3p-lUa" eventType="touchUpInside" id="Zeb-Dj-hvd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Bb-YS-brf" firstAttribute="top" secondItem="AAQ-N0-yXS" secondAttribute="top" id="2vc-Bc-AZz"/>
+                                    <constraint firstItem="Ki9-Bv-6Qi" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="10" id="373-7B-wC7"/>
+                                    <constraint firstAttribute="trailing" secondItem="ahJ-3f-nTM" secondAttribute="trailing" constant="16" id="3mD-7b-anP"/>
+                                    <constraint firstItem="AAQ-N0-yXS" firstAttribute="centerX" secondItem="HZS-6h-bNS" secondAttribute="centerX" id="7OX-8R-7x3"/>
+                                    <constraint firstItem="Dm0-cf-fbD" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" id="7gW-lx-SSt"/>
+                                    <constraint firstAttribute="trailing" secondItem="GfD-im-csH" secondAttribute="trailing" constant="16" id="857-H2-qu8"/>
+                                    <constraint firstItem="N3u-Gh-EKw" firstAttribute="top" secondItem="8cn-RL-K7a" secondAttribute="bottom" constant="24" id="8i7-td-ZVt"/>
+                                    <constraint firstItem="mAe-l1-oyD" firstAttribute="top" secondItem="Ki9-Bv-6Qi" secondAttribute="bottom" constant="16" id="9Op-L9-9ZA"/>
+                                    <constraint firstAttribute="trailing" secondItem="mAe-l1-oyD" secondAttribute="trailing" constant="16" id="AJg-RK-UaK"/>
+                                    <constraint firstItem="mcJ-ze-HEa" firstAttribute="top" secondItem="6RE-bx-A8v" secondAttribute="bottom" constant="16" id="Bh1-cF-MqV"/>
+                                    <constraint firstItem="kAg-fm-UAn" firstAttribute="centerY" secondItem="6RE-bx-A8v" secondAttribute="centerY" id="C4V-dF-yc0"/>
+                                    <constraint firstItem="ahJ-3f-nTM" firstAttribute="top" secondItem="BEd-HD-9Gt" secondAttribute="bottom" constant="16" id="Cek-CF-STs"/>
+                                    <constraint firstItem="Dm0-cf-fbD" firstAttribute="top" secondItem="HZS-6h-bNS" secondAttribute="top" id="Dlg-Ch-dA5"/>
+                                    <constraint firstItem="6RE-bx-A8v" firstAttribute="top" secondItem="ahJ-3f-nTM" secondAttribute="bottom" id="EGP-yY-vOE"/>
+                                    <constraint firstItem="9Bb-YS-brf" firstAttribute="centerX" secondItem="AAQ-N0-yXS" secondAttribute="centerX" id="GZV-aW-lbb"/>
+                                    <constraint firstAttribute="trailing" secondItem="dlH-wS-qkL" secondAttribute="trailing" constant="16" id="HPe-yD-uu7"/>
+                                    <constraint firstItem="dlH-wS-qkL" firstAttribute="top" secondItem="9Bb-YS-brf" secondAttribute="bottom" constant="48" id="JD1-mG-Brt"/>
+                                    <constraint firstAttribute="trailing" secondItem="mcJ-ze-HEa" secondAttribute="trailing" constant="16" id="MEL-A4-19J"/>
+                                    <constraint firstItem="VmY-6Y-3EY" firstAttribute="top" secondItem="QhU-FI-3ea" secondAttribute="bottom" id="PAs-5n-PxB"/>
+                                    <constraint firstItem="BEd-HD-9Gt" firstAttribute="top" secondItem="S2J-E4-2SS" secondAttribute="bottom" id="PF9-Ji-Vcg"/>
+                                    <constraint firstAttribute="trailing" secondItem="S2J-E4-2SS" secondAttribute="trailing" constant="16" id="PZk-bf-MMC"/>
+                                    <constraint firstItem="iCm-zh-vyY" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="R0D-nh-GNO"/>
+                                    <constraint firstItem="AAQ-N0-yXS" firstAttribute="top" secondItem="Dm0-cf-fbD" secondAttribute="bottom" constant="15" id="RoK-qg-b58"/>
+                                    <constraint firstItem="kAg-fm-UAn" firstAttribute="centerX" secondItem="HZS-6h-bNS" secondAttribute="centerX" id="Rwz-45-3Cy"/>
+                                    <constraint firstItem="8cn-RL-K7a" firstAttribute="top" secondItem="mcJ-ze-HEa" secondAttribute="bottom" id="SNx-rf-35w"/>
+                                    <constraint firstItem="QhU-FI-3ea" firstAttribute="top" secondItem="GfD-im-csH" secondAttribute="bottom" constant="16" id="SpC-A8-Tsa"/>
+                                    <constraint firstItem="GfD-im-csH" firstAttribute="top" secondItem="mAe-l1-oyD" secondAttribute="bottom" id="SsS-8F-6B7"/>
+                                    <constraint firstItem="GfD-im-csH" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="TaE-EF-Iwd"/>
+                                    <constraint firstItem="iCm-zh-vyY" firstAttribute="centerY" secondItem="6RE-bx-A8v" secondAttribute="centerY" id="UUG-Sd-Ggh"/>
+                                    <constraint firstItem="9Bb-YS-brf" firstAttribute="height" secondItem="AAQ-N0-yXS" secondAttribute="height" constant="16" id="Yjg-QM-h5w"/>
+                                    <constraint firstItem="Ki9-Bv-6Qi" firstAttribute="top" secondItem="dlH-wS-qkL" secondAttribute="bottom" constant="16" id="YkV-oS-ZJA"/>
+                                    <constraint firstAttribute="trailing" secondItem="6RE-bx-A8v" secondAttribute="trailing" constant="16" id="a3M-hp-PaH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dm0-cf-fbD" secondAttribute="trailing" id="aeZ-WQ-zao"/>
+                                    <constraint firstAttribute="trailing" secondItem="BEd-HD-9Gt" secondAttribute="trailing" constant="16" id="bKI-w2-75N"/>
+                                    <constraint firstAttribute="bottom" secondItem="N3u-Gh-EKw" secondAttribute="bottom" constant="24" id="bUN-M0-fqR"/>
+                                    <constraint firstAttribute="trailing" secondItem="QhU-FI-3ea" secondAttribute="trailing" constant="16" id="hDM-kM-FtK"/>
+                                    <constraint firstAttribute="trailing" secondItem="8cn-RL-K7a" secondAttribute="trailing" constant="16" id="hq9-tD-sAY"/>
+                                    <constraint firstItem="dlH-wS-qkL" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="hyD-fI-z1v"/>
+                                    <constraint firstItem="N3u-Gh-EKw" firstAttribute="centerX" secondItem="HZS-6h-bNS" secondAttribute="centerX" id="iiW-dI-H44"/>
+                                    <constraint firstItem="S2J-E4-2SS" firstAttribute="top" secondItem="VmY-6Y-3EY" secondAttribute="bottom" constant="16" id="lFG-b4-o1L"/>
+                                    <constraint firstAttribute="trailing" secondItem="VmY-6Y-3EY" secondAttribute="trailing" constant="16" id="oDT-pB-yV6"/>
+                                    <constraint firstItem="kAg-fm-UAn" firstAttribute="leading" secondItem="iCm-zh-vyY" secondAttribute="trailing" constant="16" id="poy-2w-kHs"/>
+                                    <constraint firstItem="BEd-HD-9Gt" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="pt7-jU-Tpj"/>
+                                    <constraint firstItem="8cn-RL-K7a" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="sjl-7r-w0J"/>
+                                    <constraint firstItem="VmY-6Y-3EY" firstAttribute="leading" secondItem="HZS-6h-bNS" secondAttribute="leading" constant="16" id="slN-PL-2Cv"/>
+                                    <constraint firstItem="6RE-bx-A8v" firstAttribute="leading" secondItem="kAg-fm-UAn" secondAttribute="trailing" constant="16" id="ugL-GQ-xIa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ki9-Bv-6Qi" secondAttribute="trailing" constant="10" id="yFD-Gy-pkq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6l1-M6-Ke9" firstAttribute="bottom" secondItem="HZS-6h-bNS" secondAttribute="bottom" id="Fxj-6s-HbP"/>
+                            <constraint firstItem="6l1-M6-Ke9" firstAttribute="trailing" secondItem="HZS-6h-bNS" secondAttribute="trailing" id="Yid-qa-pDk"/>
+                            <constraint firstItem="HZS-6h-bNS" firstAttribute="top" secondItem="6l1-M6-Ke9" secondAttribute="top" id="ihJ-pS-YeX"/>
+                            <constraint firstItem="HZS-6h-bNS" firstAttribute="leading" secondItem="6l1-M6-Ke9" secondAttribute="leading" id="l03-Br-IgI"/>
+                            <constraint firstItem="Dm0-cf-fbD" firstAttribute="width" secondItem="gxD-7l-bLa" secondAttribute="width" id="vhd-E8-Jny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6l1-M6-Ke9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="البيانات" id="HVi-60-ovn"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="L_pressureTF" destination="6RE-bx-A8v" id="UOa-6d-hcF"/>
+                        <outlet property="ageTF" destination="GfD-im-csH" id="qyx-Ru-h4p"/>
+                        <outlet property="bttomConstrain" destination="bUN-M0-fqR" id="HCH-M4-djK"/>
+                        <outlet property="h_pressureTF" destination="iCm-zh-vyY" id="hrN-F5-FK5"/>
+                        <outlet property="hieghtTF" destination="VmY-6Y-3EY" id="Bfr-wX-SoX"/>
+                        <outlet property="imgPhoto" destination="AAQ-N0-yXS" id="1bc-8s-hMq"/>
+                        <outlet property="nameTF" destination="KPi-aL-R6g" id="NUo-h3-qLa"/>
+                        <outlet property="phoneTF" destination="RZ0-Sv-wLs" id="su5-mx-0dZ"/>
+                        <outlet property="sugarTF" destination="8cn-RL-K7a" id="k0n-Z6-bdW"/>
+                        <outlet property="wieghtTF" destination="BEd-HD-9Gt" id="B8F-zI-W1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgh-w4-lcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836" y="177.21139430284859"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ag6-Ax-NBb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZi-Xv-NKM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vdT-2F-Y8U">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yln-3p-lUa" kind="relationship" relationship="rootViewController" id="0f9-r9-cId"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOh-ya-Yue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896.8" y="177.66116941529236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="name" width="100" height="100"/>
+        <image name="phone" width="100" height="100"/>
+        <image name="user_photo" width="100" height="100"/>
+    </resources>
+    <color key="tintColor" red="0.3296527863" green="0.7216314077" blue="0.70981115100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>
